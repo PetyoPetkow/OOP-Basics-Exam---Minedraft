@@ -4,7 +4,7 @@
     using System.Collections.Generic;
     using System.Text;
 
-    public class Harvester
+    public abstract class Harvester
     {
         private string id;
         private double oreOutput;

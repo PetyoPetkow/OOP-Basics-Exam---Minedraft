@@ -10,7 +10,8 @@
     {
         static void Main()
         {
-            HammerHarvester har = new HammerHarvester("asd", -1, 10.2);
+            
+            HammerHarvester har = new HammerHarvester("asd", 2, 10.2);
             Console.WriteLine(har.OreOutput.ToString());
             Console.WriteLine(har.EnergyRequirement.ToString());
 
