@@ -11,5 +11,10 @@
         {
             base.EnergyOutput = energyOutput + (energyOutput / 2);
         }
+        //public static void OutputEnergy(pressure)
+        //{
+        //    double energy = 0;
+        //    energy += OutputEnergy;
+        //}
     }
 }
