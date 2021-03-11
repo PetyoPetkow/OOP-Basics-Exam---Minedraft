@@ -23,8 +23,20 @@
             }
             set
             {
-                this.sonicFactor = value;
+                if (value<0 || value>10)
+                {
+                    throw new ArgumentException (message: "Sonic factor must be a value between 1 and 10!");
+                }
+                else
+                {
+                    this.sonicFactor = value;
+                }
             }
+
+        }
+        public override string ToString()
+        {
+            return $"Sonic Harvester - {Id} \n" + $"Ore Output: {OreOutput} ";
         }
     }
 }

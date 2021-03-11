@@ -6,15 +6,15 @@
 
     public class PressureProvider:Provider
     {
-        public PressureProvider(string id,double energyOutput)
+        public PressureProvider(string id, double energyOutput)
             :base(id,energyOutput)
         {
             base.EnergyOutput = energyOutput + (energyOutput / 2);
         }
-        //public static void OutputEnergy(pressure)
-        //{
-        //    double energy = 0;
-        //    energy += OutputEnergy;
-        //}
+
+        public override string ToString()
+        {
+            return $"Pressure Provider - {Id} \n" + $"Energy Output: {EnergyOutput}";
+        }
     }
 }

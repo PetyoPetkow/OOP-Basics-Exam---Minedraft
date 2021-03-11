@@ -12,5 +12,9 @@
             base.OreOutput = oreOutput+(2*oreOutput);
             base.EnergyRequirement = 2*energyRequirement;
         }
+        public override string ToString()
+        {
+            return $"Hammer Harvester - {Id}\n" + $"Ore Output: {OreOutput} ";
+        }
     }
 }
